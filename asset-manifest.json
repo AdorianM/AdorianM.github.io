@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AdorianM.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/AdorianM.github.io/static/js/main.046d48a7.js",
+    "static/js/787.71e672d5.chunk.js": "/AdorianM.github.io/static/js/787.71e672d5.chunk.js",
+    "static/media/logo.svg": "/AdorianM.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/AdorianM.github.io/index.html",
+    "main.073c9b0a.css.map": "/AdorianM.github.io/static/css/main.073c9b0a.css.map",
+    "main.046d48a7.js.map": "/AdorianM.github.io/static/js/main.046d48a7.js.map",
+    "787.71e672d5.chunk.js.map": "/AdorianM.github.io/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.046d48a7.js"
+  ]
+}
