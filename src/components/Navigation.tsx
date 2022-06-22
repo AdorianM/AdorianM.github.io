@@ -9,6 +9,15 @@ const Navigation = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
+                    <Link to="/Math">Math</Link>
+                </li>
+                <li>
+                    <Link to="/Physics">Physics</Link>
+                </li>
+                <li>
+                    <Link to="/Design">Design</Link>
+                </li>
+                <li>
                     <Link to="/Others">Others</Link>
                 </li>
             </ul>

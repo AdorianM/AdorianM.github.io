@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-const NotFound = () => {
+const Math = () => {
     return (
     <div>
-        <h1>Not found</h1>
+        <h1>Math</h1>
     </div>
     );
 }
 
-export default NotFound;
+export default Math;
