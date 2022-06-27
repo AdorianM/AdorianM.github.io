@@ -19,8 +19,7 @@ const Navigation = (props: {menus: IMenu[]}) => {
                     props.menus.map((elem: any) => {
                         return (
                             <li key={elem.id}>
-                                <Link onClick={() => {}} 
-                                      to={elem.path}
+                                <Link to={elem.path}
                                       className={elem.path === location.pathname ? 'selected' : ""}>
                                     {elem.title}
                                 </Link>

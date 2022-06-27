@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Navigation, {IMenu} from './components/Navigation';
 import Gallery from './pages/Gallery';
+import Article from './pages/Article';
 
 import Spacer from './components/Spacer';
 
@@ -44,10 +45,10 @@ function App() {
           <Spacer width={260}/>
           <Routes>
             <Route path="/" element={<Gallery type={"all"}/>} />
-            <Route path="Math" element={<Gallery type={"math"}/>} />
-            <Route path="Physics" element={<Gallery type={"physics"}/>} />
-            <Route path="Design" element={<Gallery type={"design"}/>} />
-            <Route path="Others" element={<Gallery type={"others"}/>} />
+            <Route path="math" element={<Gallery type={"math"}/>} />
+            <Route path="physics" element={<Gallery type={"physics"}/>} />
+            <Route path="design" element={<Gallery type={"design"}/>} />
+            <Route path="others" element={<Gallery type={"others"}/>} />
             <Route path="*" element={<h1>Page not found</h1>} />
           </Routes>
         </div>

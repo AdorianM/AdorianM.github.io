@@ -6,6 +6,7 @@
     border-radius: 5px;
 
     background-color: #fff;
+    text-decoration: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
     overflow: hidden;
@@ -24,6 +25,7 @@
 .gallery .gallery-item .gallery-item-info {
     height: 60px;
     padding: 4px;
+    display: block;
 }
 
 .gallery .gallery-item .gallery-item-info h1 {
