@@ -1,0 +1,16 @@
+.gallery-panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: auto;
+
+    max-width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 100%;
+}

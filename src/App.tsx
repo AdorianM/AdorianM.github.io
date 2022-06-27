@@ -1,15 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Navigation from './components/Navigation';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Others from './pages/Others';
-import Math from './pages/Math';
-import Physics from './pages/Physics';
-import Design from './pages/Design';
+import Navigation, {IMenu} from './components/Navigation';
+import Gallery from './pages/Gallery';
 
-import {IMenu} from './services/Interfaces';
+import Spacer from './components/Spacer';
 
 
 const Menus: IMenu[] = [
@@ -45,14 +40,17 @@ function App() {
   return (
       <BrowserRouter>
         <Navigation menus={Menus} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Math" element={<Math />} />
-          <Route path="Physics" element={<Physics />} />
-          <Route path="Design" element={<Design />} />
-          <Route path="Others" element={<Others />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className='container'>
+          <Spacer width={260}/>
+          <Routes>
+            <Route path="/" element={<Gallery type={"all"}/>} />
+            <Route path="Math" element={<Gallery type={"math"}/>} />
+            <Route path="Physics" element={<Gallery type={"physics"}/>} />
+            <Route path="Design" element={<Gallery type={"design"}/>} />
+            <Route path="Others" element={<Gallery type={"others"}/>} />
+            <Route path="*" element={<h1>Page not found</h1>} />
+          </Routes>
+        </div>
       </BrowserRouter>
   );
 }

@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
-
 import {useLocation} from 'react-router-dom';
-import { IMenu } from '../services/Interfaces';
+
+interface IMenu {
+    id: string;
+    title: string;
+    path: string;
+}
+
 
 const Navigation = (props: {menus: IMenu[]}) => {
     const location = useLocation();
@@ -29,3 +34,4 @@ const Navigation = (props: {menus: IMenu[]}) => {
 }
 
 export default Navigation;
+export type { IMenu };
