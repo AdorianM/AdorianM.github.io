@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FC } from 'react';
 import GalleryItem, {IGalleryItem} from '../components/GalleryItem';
-import './Gallery.css';
+import '../scss/Gallery.scss';
 
 const itemList: IGalleryItem[] = [
     {

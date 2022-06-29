@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Navigation.css';
+import '../scss/Navigation.scss';
 import {useLocation} from 'react-router-dom';
 
 interface IMenu {
