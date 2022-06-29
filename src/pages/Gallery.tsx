@@ -43,7 +43,6 @@ const Gallery:FC<{type: string}> = (props: {type: string}) => {
     }
     return (
     <div className='gallery-panel'>
-        <h1>Gallery</h1>
         <div className="gallery">
             {
                 filteredList.map((item:IGalleryItem) => {

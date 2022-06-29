@@ -42,3 +42,24 @@
     
     margin: 0 0 4px 0;
 }
+
+.category-home {
+    background-color: #CC9373;
+}
+
+.category-math {
+    background-color: #F57C51;
+}
+
+.category-physics {
+    /* background-color: #FFB8BF; */
+    background-color: #F8CB0A;
+}
+
+.category-design {
+    background-color: #80D078;
+}
+
+.category-others {
+    background-color: #6B9C92;
+}

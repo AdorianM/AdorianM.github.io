@@ -15,7 +15,7 @@ const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
         <Link className="gallery-item"
               to={`/${props.type}/${props.title.toLowerCase()}`}>
             <img src={props.imagePath} alt={props.title} />
-            <span className="gallery-item-info">
+            <span className={`gallery-item-info category-${props.type}`}>
                 <h1>{props.title}</h1>
                 <p>{props.description}</p>
             </span>

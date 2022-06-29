@@ -4,6 +4,7 @@ import './App.css';
 import Navigation, {IMenu} from './components/Navigation';
 import Gallery from './pages/Gallery';
 import Article from './pages/Article';
+import Header from './components/Header';
 
 import Spacer from './components/Spacer';
 
@@ -40,24 +41,27 @@ function App() {
 
   return (
       <BrowserRouter>
-        <Navigation menus={Menus} />
-        <div className='container'>
-          <Spacer width={260}/>
-          <Routes>
-            <Route path="/" element={<Gallery type={"all"}/>} />
+        <Header />
+        <div>
+          <Navigation menus={Menus} />
+          <div className='container'>
+            <Spacer width={200}/>
+            <Routes>
+              <Route path="/" element={<Gallery type={"all"}/>} />
 
-            <Route path="math" element={<Gallery type={"math"}/>} />
-            <Route path="physics" element={<Gallery type={"physics"}/>} />
-            <Route path="design" element={<Gallery type={"design"}/>} />
-            <Route path="others" element={<Gallery type={"others"}/>} />
+              <Route path="math" element={<Gallery type={"math"}/>} />
+              <Route path="physics" element={<Gallery type={"physics"}/>} />
+              <Route path="design" element={<Gallery type={"design"}/>} />
+              <Route path="others" element={<Gallery type={"others"}/>} />
 
-            <Route path="math/:title" element={<Article />} />
-            <Route path="physics/:title" element={<Article />} />
-            <Route path="design/:title" element={<Article />} />
-            <Route path="others/:title" element={<Article />} />
+              <Route path="math/:title" element={<Article />} />
+              <Route path="physics/:title" element={<Article />} />
+              <Route path="design/:title" element={<Article />} />
+              <Route path="others/:title" element={<Article />} />
 
-            <Route path="*" element={<h1>Page not found</h1>} />
-          </Routes>
+              <Route path="*" element={<h1>Page not found</h1>} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
   );

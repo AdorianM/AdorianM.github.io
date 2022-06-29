@@ -1,0 +1,19 @@
+header {
+    background-color: rgb(255,246,183);
+    padding: 5px;
+    text-align: center;
+
+    border-bottom: 4px solid rgb(255,246,183);
+    border-image-slice: 1;
+    border-width: 0 0 4px 0;
+    border-image-source: linear-gradient(90deg, rgba(255,246,183,1) 0%, rgba(246,65,108,1) 50%, rgba(255,246,183,1) 100%);
+
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
