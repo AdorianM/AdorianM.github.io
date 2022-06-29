@@ -10,10 +10,10 @@ interface IGalleryItem {
     type: string;
 }
 
-const GalleryItem:FC<IGalleryItem> = (props) => {
+const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
     return (
         <Link className="gallery-item"
-              to={props.type}>
+              to={`/${props.type}/${props.title.toLowerCase()}`}>
             <img src={props.imagePath} alt={props.title} />
             <span className="gallery-item-info">
                 <h1>{props.title}</h1>

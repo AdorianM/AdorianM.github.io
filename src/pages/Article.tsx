@@ -1,9 +1,13 @@
-import { FC } from "react";
+import { useParams } from "react-router-dom";
 
-const Article:FC<{title: string}> = (props: {title: string}) => {
+const Article = () => {
+    
+    const params = useParams()
+
     return (
         <div>
-            <h1>{props.title}</h1>
+            <h1>{params.title}</h1>
+            <p> I am here </p>
         </div>
     );
 }

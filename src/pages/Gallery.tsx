@@ -13,7 +13,7 @@ const itemList: IGalleryItem[] = [
     },
     {
         id: 2,
-        title: 'Math',
+        title: 'cat maths',
         description: 'Math is cool!',
         imagePath: 'https://picsum.photos/300/350',
         type: 'math'
