@@ -65,3 +65,34 @@
 .category-others {
     background-color: #6B9C92;
 }
+
+@media (max-width: 480px) {
+    .gallery {
+        .gallery-item {
+            width: 23%;
+            min-width: 140px;
+            margin: 3px 3px 3px 0;
+
+            img {
+                height: 96px;
+            }
+
+            .gallery-item-info {
+                height: 36px;
+                padding: 2px;
+
+                h1 {
+                    font-size: 10px;
+                    
+                    margin: 0 0 2px 0;
+                }
+
+                p {
+                    font-size: 7px;
+                    
+                    margin: 0 0 2px 0;
+                }
+            }
+        }
+    }
+}

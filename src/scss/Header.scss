@@ -17,3 +17,13 @@ header {
         font-weight: 500;
     }
 }
+
+@media (max-width: 480px) {
+    header {
+        padding: 3px;
+        border-width: 0 0 1px 0;
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}

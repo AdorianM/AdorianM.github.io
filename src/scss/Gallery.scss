@@ -16,3 +16,9 @@
 
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    .gallery {
+        margin-top: 10px;
+    }
+}

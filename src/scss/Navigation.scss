@@ -78,3 +78,28 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .navigation {
+        ul {
+            width: 80px;
+            
+            padding: 6px;
+
+            li {
+                a.selected {
+                    height: 70px;
+                    width: 70px;
+                }
+                
+                a {
+                    height: 60px;
+                    width: 60px;
+
+                    margin-bottom: 6px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

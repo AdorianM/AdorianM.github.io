@@ -1,0 +1,13 @@
+.spacer {
+    width: 200px;
+    min-width: 200px;
+    margin: 20px;
+}
+
+@media (max-width: 480px) {
+    .spacer {
+        width: 100px;
+        min-width: 100px;
+        margin: 0;
+    }
+}

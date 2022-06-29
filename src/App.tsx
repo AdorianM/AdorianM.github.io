@@ -45,7 +45,7 @@ function App() {
         <div>
           <Navigation menus={Menus} />
           <div className='container'>
-            <Spacer width={200}/>
+            <Spacer />
             <Routes>
               <Route path="/" element={<Gallery type={"all"}/>} />
 
