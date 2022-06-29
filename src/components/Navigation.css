@@ -1,9 +1,11 @@
 .navigation {
     position: fixed;
-    margin: 0 20px;
+    margin: 0 20px 0 0;
+    height: 100%;
 
     top: 50%;
     transform: translate(0, -50%);
+
 }
 .navigation ul {
     display: flex;
@@ -11,13 +13,14 @@
     justify-content: center;
     align-items: center;
 
-    width: 140px; /* a fixed width makes the click animation more stable (no bouncy elements) */
+    height: 100%;
+    width: 160px; /* a fixed width makes the click animation more stable (no bouncy elements) */
 
     margin: 0;
     padding: 12px;
 
     list-style-type: none;
-    background: rgb(246,65,108);
+    background: rgba(255,246,183,1);
     background: linear-gradient(0deg, rgba(246,65,108,1) 0%, rgba(255,246,183,1) 100%);
 }
 
@@ -48,6 +51,27 @@
     font-weight: bold;
 
     transition: 0.3s;
+}
+
+.navigation ul li .category-home {
+    background-color: #CC9373;
+}
+
+.navigation ul li .category-math {
+    background-color: #F57C51;
+}
+
+.navigation ul li .category-physics {
+    /* background-color: #FFB8BF; */
+    background-color: #F8CB0A;
+}
+
+.navigation ul li .category-design {
+    background-color: #80D078;
+}
+
+.navigation ul li .category-others {
+    background-color: #6B9C92;
 }
 
 .navigation ul li a:hover {

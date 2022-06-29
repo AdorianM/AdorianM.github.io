@@ -17,11 +17,11 @@ const Navigation = (props: {menus: IMenu[]}) => {
             <ul>
                 {
                     props.menus.map((elem: any) => {
+                        const classes = `${location.pathname === elem.path ? 'selected ' : ''}category-${elem.title.toLowerCase()}`
                         return (
                             <li key={elem.id}>
-                                <Link onClick={() => {}} 
-                                      to={elem.path}
-                                      className={elem.path === location.pathname ? 'selected' : ""}>
+                                <Link to={elem.path}
+                                      className={classes} >
                                     {elem.title}
                                 </Link>
                             </li>

@@ -13,7 +13,7 @@ const itemList: IGalleryItem[] = [
     },
     {
         id: 2,
-        title: 'Math',
+        title: 'cat maths',
         description: 'Math is cool!',
         imagePath: 'https://picsum.photos/300/350',
         type: 'math'
@@ -43,7 +43,6 @@ const Gallery:FC<{type: string}> = (props: {type: string}) => {
     }
     return (
     <div className='gallery-panel'>
-        <h1>Gallery</h1>
         <div className="gallery">
             {
                 filteredList.map((item:IGalleryItem) => {

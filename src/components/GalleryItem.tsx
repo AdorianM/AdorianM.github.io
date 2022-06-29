@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import './GalleryItem.css';
 
 interface IGalleryItem {
@@ -9,15 +10,16 @@ interface IGalleryItem {
     type: string;
 }
 
-const GalleryItem:FC<IGalleryItem> = (props) => {
+const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
     return (
-        <div className="gallery-item">
+        <Link className="gallery-item"
+              to={`/${props.type}/${props.title.toLowerCase()}`}>
             <img src={props.imagePath} alt={props.title} />
-            <div className="gallery-item-info">
+            <span className={`gallery-item-info category-${props.type}`}>
                 <h1>{props.title}</h1>
                 <p>{props.description}</p>
-            </div>
-        </div>
+            </span>
+        </Link>
     );
 }
 
