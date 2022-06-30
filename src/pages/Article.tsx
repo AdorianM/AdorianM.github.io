@@ -1,13 +1,15 @@
 import { useParams } from "react-router-dom";
+import '../scss/Article.scss'
+import '../scss/Content.scss'
 
 const Article = () => {
     
     const params = useParams()
 
     return (
-        <div>
+        <div className="content-panel article">
             <h1>{params.title}</h1>
-            <p> I am here </p>
+            <p> This is a pretty test. I really like this font. Is it for me? </p>
         </div>
     );
 }

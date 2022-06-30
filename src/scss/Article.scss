@@ -1,0 +1,15 @@
+$bg-color: #fffedb;
+$dot-color: #1D1D1D;
+
+$dot-size: 1px;
+$dot-space: 20px;
+
+.article {
+    /* font-family: 'Itim', cursive; */
+    font-family: 'Comic Neue', cursive;
+    background:
+    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+background-size: $dot-space $dot-space;
+}

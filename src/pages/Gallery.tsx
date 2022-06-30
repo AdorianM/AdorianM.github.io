@@ -2,6 +2,7 @@ import * as React from 'react';
 import { FC } from 'react';
 import GalleryItem, {IGalleryItem} from '../components/GalleryItem';
 import '../scss/Gallery.scss';
+import '../scss/Content.scss';
 
 const itemList: IGalleryItem[] = [
     {
@@ -42,7 +43,7 @@ const Gallery:FC<{type: string}> = (props: {type: string}) => {
         filteredList = itemList.filter(item => item.type === type)
     }
     return (
-    <div className='gallery-panel'>
+    <div className='content-panel gallery-panel'>
         <div className="gallery">
             {
                 filteredList.map((item:IGalleryItem) => {
