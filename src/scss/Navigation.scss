@@ -79,6 +79,30 @@
     }
 }
 
+@media (max-width: 900px) {
+    .navigation {
+        ul {
+            width: 120px;
+            
+            padding: 10px;
+
+            li {
+                a.selected {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                a {
+                    height: 80px;
+                    width: 80px;
+
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .navigation {
         ul {

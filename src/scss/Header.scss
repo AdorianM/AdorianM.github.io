@@ -18,6 +18,16 @@ header {
     }
 }
 
+@media (max-width: 900px) {
+    header {
+        padding: 4px;
+        border-width: 0 0 2px 0;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
 @media (max-width: 480px) {
     header {
         padding: 3px;

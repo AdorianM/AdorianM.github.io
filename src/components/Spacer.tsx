@@ -1,4 +1,3 @@
-import { FC } from "react";
 import '../scss/Spacer.scss';
 
 const Spacer = () => {

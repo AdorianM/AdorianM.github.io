@@ -17,6 +17,12 @@
     width: 100%;
 }
 
+@media (max-width: 900px) {
+    .gallery {
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 480px) {
     .gallery {
         margin-top: 10px;
