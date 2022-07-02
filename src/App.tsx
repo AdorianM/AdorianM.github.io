@@ -26,9 +26,9 @@ const Menus: IMenu[] = [
     path: '/physics'
   },
   {
-    id: 'design',
-    title: 'Design',
-    path: '/design'
+    id: 'tech',
+    title: 'Tech',
+    path: '/tech'
   },
   {
     id: 'others',
@@ -51,12 +51,12 @@ function App() {
 
               <Route path="math" element={<Gallery type={"math"}/>} />
               <Route path="physics" element={<Gallery type={"physics"}/>} />
-              <Route path="design" element={<Gallery type={"design"}/>} />
+              <Route path="tech" element={<Gallery type={"tech"}/>} />
               <Route path="others" element={<Gallery type={"others"}/>} />
 
               <Route path="math/:title" element={<Article />} />
               <Route path="physics/:title" element={<Article />} />
-              <Route path="design/:title" element={<Article />} />
+              <Route path="tech/:title" element={<Article />} />
               <Route path="others/:title" element={<Article />} />
 
               <Route path="*" element={<h1>Page not found</h1>} />
