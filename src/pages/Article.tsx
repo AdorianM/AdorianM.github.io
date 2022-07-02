@@ -2,7 +2,12 @@ import { useParams } from "react-router-dom";
 import '../scss/Article.scss'
 import '../scss/Content.scss'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 import { useState, useEffect } from "react";
+
+import 'katex/dist/katex.min.css'
 
 const Article = () => {
     
@@ -36,7 +41,8 @@ const Article = () => {
 
     return (
         <article className="content-panel">
-            <ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]}
+                           rehypePlugins={[rehypeKatex]}>
                 {content}
             </ReactMarkdown>
         </article>
