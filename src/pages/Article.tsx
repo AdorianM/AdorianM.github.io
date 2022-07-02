@@ -9,11 +9,11 @@ const Article = () => {
     const params = useParams()
 
     return (
-        <div className="content-panel article">
+        <article className="content-panel">
             <h1>{params.title}</h1>
-            <Paper />
+            {/* <Paper /> */}
             <p> This is a pretty test. I really like this font. Is it for me? </p>
-        </div>
+        </article>
     );
 }
 
