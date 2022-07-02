@@ -1,6 +1,15 @@
 // See: https://github.com/remarkjs/react-markdown/issues/82#issuecomment-316110533
 
 article {
-    /* font-family: 'Itim', cursive; */
-    font-family: 'Comic Neue', cursive;
+    // font-family: 'Itim', cursive;
+    // font-family: 'Comic Neue', cursive;
+    font-family: 'Short Stack', cursive;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+
+        font-family: 'ChalkDash'
+    }
 }
