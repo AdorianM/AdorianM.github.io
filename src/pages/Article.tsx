@@ -7,8 +7,9 @@ import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import { useState, useEffect } from "react";
 import 'doodle.css/doodle.css'
-
 import 'katex/dist/katex.min.css'
+
+import Test from '../content/articles/test.mdx'
 
 const Article = () => {
     
@@ -27,7 +28,10 @@ const Article = () => {
                 // Fetch the data at the markdown location
                 fetch(res.default)
                     .then(res => res.text())
-                    .then(res => setContent(res))
+                    .then(res => {
+                        console.log(res)
+                        setContent(res)
+                        })
                     .catch(
                         err => {
                             console.log(err)
@@ -42,10 +46,12 @@ const Article = () => {
 
     return (
         <article className="content-panel doodle">
+            <Test />
             <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]}
                            rehypePlugins={[rehypeKatex]}>
                 {content}
             </ReactMarkdown>
+
         </article>
     );
 }
