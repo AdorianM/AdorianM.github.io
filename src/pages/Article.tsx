@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import { useState, useEffect } from "react";
+import 'doodle.css/doodle.css'
 
 import 'katex/dist/katex.min.css'
 
@@ -40,7 +41,7 @@ const Article = () => {
 
 
     return (
-        <article className="content-panel">
+        <article className="content-panel doodle">
             <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]}
                            rehypePlugins={[rehypeKatex]}>
                 {content}
