@@ -1,0 +1,129 @@
+.navigation {
+    position: fixed;
+    margin: 0 20px 0 0;
+    height: 100%;
+
+    top: 50%;
+    transform: translate(0, -50%);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        height: 100%;
+        width: 160px; /* a fixed width makes the click animation more stable (no bouncy elements) */
+    
+        margin: 0;
+        padding: 12px;
+    
+        list-style-type: none;
+        background: rgba(255,246,183,1);
+        background: linear-gradient(0deg, rgba(246,65,108,1) 0%, rgba(255,246,183,1) 100%);
+
+        li {
+            text-align: center;
+
+            a.selected {
+                height: 125px;
+                width: 138px;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                height: 100px;
+                width: 110px;
+            
+                border-radius: 6px;
+                margin-bottom: 6px;
+            
+                background-color: #8C1BAB;
+                text-decoration: none;
+                color: rgba(255,246,183,1);
+                font-size: 20px;
+                font-weight: bold;
+            
+                transition: 0.3s;
+            }
+
+            a:hover {
+                background-color: #2C2C2C;
+                color: #EFEFEF;
+            }
+
+            .category-home {
+                background-color: #CC9373;
+            }
+
+            .category-math {
+                background-color: #F57C51;
+            }
+
+            .category-physics {
+                /* background-color: #FFB8BF; */
+                background-color: #F8CB0A;
+            }
+
+            .category-design {
+                background-color: #80D078;
+            }
+
+            .category-others {
+                background-color: #6B9C92;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .navigation {
+        ul {
+            width: 120px;
+            
+            padding: 10px;
+
+            li {
+                a.selected {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                a {
+                    height: 80px;
+                    width: 80px;
+
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        ul {
+            width: 80px;
+            
+            padding: 6px;
+
+            li {
+                a.selected {
+                    height: 70px;
+                    width: 70px;
+                }
+                
+                a {
+                    height: 60px;
+                    width: 60px;
+
+                    margin-bottom: 6px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

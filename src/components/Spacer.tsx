@@ -1,13 +1,7 @@
-import { FC } from "react";
+import '../scss/Spacer.scss';
 
-
-const Spacer:FC<{width: number}> = (props: {width: number}) => {
-    return <div style={{
-        minWidth: props.width, // Spacer no longer resizes
-        width: props.width,
-        margin: 20
-    }}
-    >&nbsp;</div>;
+const Spacer = () => {
+    return <div className="spacer">&nbsp;</div>;
 }
 
 export default Spacer

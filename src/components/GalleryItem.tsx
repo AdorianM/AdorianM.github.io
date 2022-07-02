@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import './GalleryItem.css';
+import '../scss/GalleryItem.scss';
 
 interface IGalleryItem {
     id: number;

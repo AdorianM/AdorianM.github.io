@@ -1,0 +1,19 @@
+.spacer {
+    width: 184px;
+    min-width: 184px;
+}
+
+@media (max-width: 900px) {
+    .spacer {
+        width: 138px;
+        min-width: 138px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spacer {
+        width: 90px;
+        min-width: 90px;
+        margin: 0;
+    }
+}
