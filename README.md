@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# MDX based website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This is a concept of a website that is fully customizable with JSX components and Markdown through the magic of MDX.
+MDX allows a markdown file to contain JSX elements.
 
-In the project directory, you can run:
+For example, a markdown file could contain something like this:
 
-### `npm start`
+```mdx
+# H1
+<FancyContainer>
+  A paragraph
+  
+  Another paragraph
+</FancyContainer
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Structure
+Currently, the structure is not perfectly defined, but the React application contains the following hierarchy:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+src/
+├─ components/
+|  ├─ component.tsx
+├─ content/
+│  ├─ articles/
+│  │  ├─ article-1.mdx
+│  ├─ fonts/
+│  │  ├─ font1.tff
+│  ├─ gallery/
+│  │  ├─ gallery.json
+├─ scss/
+│  ├─ style-1.scss
+├─ pages/
+|  ├─ some-page.tsx
+App.tsx
+App.css
+```
 
-### `npm test`
+### Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are defined any special components that can be used in pages, mdx articles or other components.
 
-### `npm run build`
+### Content
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Articles** - MDX files that can contain any markdown or JSX content. The name **must be** a dashed version of the title specified in gallery.json
+- **Fonts** - Fonts folder. Should probably be moved to Assets.
+- **Gallery** - Should probably remove the folder and only include the json file. Stores information about each article which is used to print a gallery item.
+  Example: 
+  ```json
+  {
+      "id":1,
+      "title":"Tech",
+      "description":"Check out my design projects",
+      "imagePath":"https://picsum.photos/300/350",
+      "type":"tech"
+    },
+    {
+      "id":2,
+      "title":"cat maths",
+      "description":"Math is cool!",
+      "imagePath":"https://picsum.photos/300/350",
+      "type":"math"
+    },
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### SCSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contains scss for the components. Currently the design is responsive with desktop-first, mobile-last. I want to try Tailwind and also to implement some kind of theming system.
 
-### `npm run eject`
+### Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Currently there is a Gallery page, containing all the articles specified in `gallery.json` and an Article page which renders a MDX file as an article.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### App.tsx
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contains routing for every gallery filter and article.
