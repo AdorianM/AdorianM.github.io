@@ -49,7 +49,8 @@ Here are defined any special components that can be used in pages, mdx articles 
 - **Gallery** - Should probably remove the folder and only include the json file. Stores information about each article which is used to print a gallery item.
   Example: 
   ```json
-  {
+  [ 
+    {
       "id":1,
       "title":"Tech",
       "description":"Check out my design projects",
@@ -62,7 +63,8 @@ Here are defined any special components that can be used in pages, mdx articles 
       "description":"Math is cool!",
       "imagePath":"https://picsum.photos/300/350",
       "type":"math"
-    },
+    }
+  ]
   ```
 
 ### SCSS
