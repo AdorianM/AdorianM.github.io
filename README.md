@@ -13,7 +13,7 @@ For example, a markdown file could contain something like this:
   A paragraph
   
   Another paragraph
-</FancyContainer
+</FancyContainer>
 ```
 
 ## Structure
