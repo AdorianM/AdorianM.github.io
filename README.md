@@ -41,6 +41,24 @@ App.css
 ### Components
 
 Here are defined any special components that can be used in pages, mdx articles or other components.
+Currently, the strategy is that components will be strict. This means that a predefined component should be used in the intended way.
+For example, if we have the component TextImage which shows an image with a heading and a paragraph then we would do something like:
+
+```mdx
+<TextImage>
+    ## The cool headline
+    The even cooler text describing the above specified cool headline
+    ![Alt Text](https://picsum.photos/500/169)
+</TextImage>
+```
+
+This component would render like this:
+
+![image](https://user-images.githubusercontent.com/67052082/177423121-608886a5-bc30-4e8f-9dfc-879fc1d126a8.png)
+
+If other types of data are provided, let's say, two images, more paragraphs, etc, then the component **will not work** as expected and will still only show exactly one h2, one p and one image.
+
+TODO: currently the only way to link images through markdown in MDX seems to be by referencing external links or the link towards the public folder. In the case we want to reference the local file `/src/assets/1.jpg` then we would have to change the markdown for `![Alt Text](/src/assets/1.jpg)` into `<img src="/src/assets/1.jpg" alt="Alt Text" />`. Find a workaround for this.
 
 ### Content
 
