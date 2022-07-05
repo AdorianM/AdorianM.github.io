@@ -1,3 +1,5 @@
+import TextImage from '../../components/TextImage';
+
 # This is one of the best articles ever
 
 ## You would never believe what he said
@@ -8,7 +10,7 @@ Do you want this?
 - or maybe something else
 - hah, `code`
 
-
+<div className="doodle-border">
 A paragraph with *emphasis* and **strong importance**.
 
 > A block quote with ~strikethrough~ and a URL: https://reactjs.org.
@@ -16,6 +18,31 @@ A paragraph with *emphasis* and **strong importance**.
 * Lists
 * [ ] todo
 * [x] done
+</div>
+
+<TextImage side={"left"}>
+    ## The cool headline
+    The even cooler text describing the above specified cool headline
+    <img src="https://picsum.photos/160/160" />
+</TextImage>
+
+<TextImage side={"right"}>
+    ## The cool headline
+    The even cooler text describing the above specified cool headline
+    <img src="https://picsum.photos/169/160" />
+</TextImage>
+
+<TextImage side={"bottom"}>
+    ## The cool headline
+    The even cooler text describing the above specified cool headline
+    <img src="https://picsum.photos/501/160" />
+</TextImage>
+
+<TextImage side={"top"}>
+    ## The cool headline
+    The even cooler text describing the above specified cool headline
+    <img src="https://picsum.photos/500/169" />
+</TextImage>
 
 A table:
 
@@ -25,5 +52,5 @@ A table:
 ## Maths
 
 $$
-\int_{a}^{b} x^2 \,dx
+c = \\pm\\sqrt{a^2 + b^2}
 $$

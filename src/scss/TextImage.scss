@@ -1,0 +1,87 @@
+// Display an image to the left and text to the right using flexbox
+.text-image {
+  display: flex;
+  align-items: stretch;
+
+  padding: 10px;
+
+  .image-description {
+    margin: 0 10px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+}
+
+.text-image.left {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .image-description {
+        text-align: left;
+    }
+
+    img {
+        width: auto;
+        height: 160px;
+    }
+}
+
+.text-image.right {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .image-description {
+        text-align: right;
+    }
+
+    img {
+        width: auto;
+        height: 160px;
+    }
+}
+
+.text-image.top {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    
+
+    .image-description {
+        text-align: center;
+        p {
+            text-align: left;
+            width: 80%;
+            margin: 1em auto;
+        }
+    }
+
+    img {
+        width: 80%;
+        height: 160px;
+        margin: 0 auto;
+    }
+}
+
+.text-image.bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .image-description {
+        text-align: center;
+        p {
+            text-align: left;
+            width: 80%;
+            margin: 1em auto;
+        }
+    }
+
+    img {
+        width: 80%;
+        height: 160px;
+        margin: 0 auto;
+    }
+}
