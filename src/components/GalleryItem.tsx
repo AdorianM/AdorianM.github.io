@@ -15,22 +15,17 @@ const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
     const [image, setImage] = useState<string | undefined>(undefined);
 
     useEffect(() => {
-        console.log("image Path: ")
-        console.log(props.imagePath)
         // If props.image is not an external url, then we need to load the image from the local file system
         if(!props.imagePath.startsWith("http")) {
             import(`../assets/images/${props.imagePath}`).then(module => {
                 setImage(module.default)
             }).catch(err => {
-                console.log(err)
                 setImage(undefined)
             })
         } else {
             setImage(props.imagePath)
         }
     }, [props.imagePath])
-
-    console.log(image)
 
     return (
         <Link className="gallery-item"

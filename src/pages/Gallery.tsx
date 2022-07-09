@@ -7,8 +7,6 @@ import galleryItems from '../content/gallery/gallery.json';
 
 const itemList: IGalleryItem[] = galleryItems
 
-console.log(galleryItems)
-
 const Gallery:FC<{type: string}> = (props: {type: string}) => {
 
     const type = props.type
