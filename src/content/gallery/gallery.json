@@ -31,7 +31,7 @@
       "id": 5,
       "title":"The Gaussian Distribution",
       "description":"I keep hearing about this, but I never really understand it.",
-      "imagePath": "gaussian",
+      "imagePath": "gaussian.png",
       "type": "math"
     }
 ]

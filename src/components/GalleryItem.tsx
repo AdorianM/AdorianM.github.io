@@ -19,7 +19,7 @@ const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
         console.log(props.imagePath)
         // If props.image is not an external url, then we need to load the image from the local file system
         if(!props.imagePath.startsWith("http")) {
-            import(`../assets/images/${props.imagePath}.png`).then(module => {
+            import(`../assets/images/${props.imagePath}`).then(module => {
                 setImage(module.default)
             }).catch(err => {
                 console.log(err)
