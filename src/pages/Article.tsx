@@ -22,7 +22,6 @@ const Article = () => {
         import(`../content/articles/${dashedTitle}.mdx`).then(module => {
             setArticle(module.default)
         }).catch(err => {
-            console.log(err)
             setArticle(undefined)
         })
     }, [dashedTitle])

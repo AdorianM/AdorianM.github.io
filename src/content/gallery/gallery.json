@@ -26,5 +26,12 @@
       "description":"Others is the collection of all other categories.",
       "imagePath":"https://picsum.photos/300/380",
       "type":"others"
+    },
+    {
+      "id": 5,
+      "title":"The Gaussian Distribution",
+      "description":"I keep hearing about this, but I never really understand it.",
+      "imagePath": "gaussian.png",
+      "type": "math"
     }
 ]
