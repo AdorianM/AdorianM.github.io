@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Navigation from '../components/Navigation'
+
 
 const Home: NextPage = () => {
   return (
@@ -15,11 +17,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div>
-          <h1>
-            <Link href="/articles/test_page">
+          <Navigation />
+          {/* <h1>
+            <Link href="articles/test_page">
               <a>this page!</a>
             </Link>
-          </h1>
+          </h1> */}
         </div>
       </main>
 
