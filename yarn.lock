@@ -697,6 +697,11 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+doodle.css@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/doodle.css/-/doodle.css-0.0.2.tgz#163be50ee8fc81ac1426fa02ea5ebb0553990207"
+  integrity sha512-WHIPpiPAG+GgdSOu9tSfRisvSCClEobSMKZ2JmvbawKKO9aff2SIhlZC0w3nE8/k+kph1NS8tON+3VJiUpl1oA==
+
 email-addresses@^3.0.1:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"

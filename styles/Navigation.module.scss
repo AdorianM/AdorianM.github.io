@@ -13,7 +13,7 @@
         align-items: center;
     
         height: 100%;
-        width: 160px; /* a fixed width makes the click animation more stable (no bouncy elements) */
+        width: 184px; /* a fixed width makes the click animation more stable (no bouncy elements) */
     
         margin: 0;
         padding: 12px;
@@ -82,7 +82,7 @@
 @media (max-width: 900px) {
     .navigation {
         ul {
-            width: 120px;
+            width: 140px;
             
             padding: 10px;
 
@@ -106,7 +106,7 @@
 @media (max-width: 480px) {
     .navigation {
         ul {
-            width: 80px;
+            width: 90px;
             
             padding: 6px;
 

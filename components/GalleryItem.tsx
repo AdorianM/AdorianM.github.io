@@ -1,7 +1,8 @@
 import { FC, useEffect, useState } from "react";
-import './GalleryItem.css';
+// import './GalleryItem.css';
+import css from '../styles/Gallery.module.scss'
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/future/image"
 import React from "react";
 
 interface IGalleryItem {
@@ -30,16 +31,16 @@ const GalleryItem:FC<IGalleryItem> = (props: IGalleryItem) => {
         }
     }, [props.imagePath])
 
-    console.log(image)
-
+    const categoryCss = css[`category-${props.type}`]
     return (
-        <Link className="gallery-item"
-              href={`/${props.type}/${props.title.toLowerCase()}`}>
-            <Image src={image} alt={props.title} />
-            <span className={`gallery-item-info category-${props.type}`}>
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
-            </span>
+        <Link href={`/articles/${props.type}/${props.title.toLowerCase()}`}>
+            <a className={css['gallery-item']}>
+                <Image src={image} alt={props.title} width={300} height={350} style={{objectFit: "cover"}}/>
+                <span className={`${css['gallery-item-info']} ${categoryCss}`}>
+                    <h1>{props.title}</h1>
+                    <p>{props.description}</p>
+                </span>
+            </a>
         </Link>
     );
 }

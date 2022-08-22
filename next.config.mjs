@@ -23,9 +23,9 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   images: {
-    loader: 'imgix',
-    path: 'https://images.unsplash.com/',
+    domains: ['picsum.photos', 'images.unsplash.com']
   },
+  experimental: { images: { allowFutureImage: true } }
 };
 
 export default nextConfig;

@@ -13,27 +13,27 @@ const menus: IMenu[] = [
     {
       id: 'home',
       title: 'Home',
-      path: '/'
+      path: '/articles/home'
     },
     {
       id: 'math',
       title: 'Math',
-      path: '/math'
+      path: '/articles/math'
     },
     {
       id: 'physics',
       title: 'Physics',
-      path: '/physics'
+      path: '/articles/physics'
     },
     {
       id: 'tech',
       title: 'Tech',
-      path: '/tech'
+      path: '/articles/tech'
     },
     {
       id: 'others',
       title: 'Others',
-      path: '/others'
+      path: '/articles/others'
     }
   ];
 
@@ -46,13 +46,18 @@ const Navigation = () => {
             <ul>
                 {
                     menus.map((elem: any) => {
-                        const selected = router.pathname === elem.path ? css.selected + ' ' : ' '
+                        const selected = router.asPath === elem.path ? css.selected + ' ' : ' '
                         const category = css[`category-${elem.title.toLowerCase()}`]
                         const classes = `${selected}${category}`
 
+                        console.log(router)
+                        console.log(elem.path)
+
                         return (
                             <li key={elem.id}>
-                                <Link href={elem.path}>
+                                <Link href={{
+                                    pathname: '/articles/' + elem.id,
+                                  }}>
                                     <a className={classes}>{elem.title}</a>
                                 </Link>
                             </li>
