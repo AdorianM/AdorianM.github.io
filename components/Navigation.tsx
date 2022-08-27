@@ -50,9 +50,6 @@ const Navigation = () => {
                         const category = css[`category-${elem.title.toLowerCase()}`]
                         const classes = `${selected}${category}`
 
-                        console.log(router)
-                        console.log(elem.path)
-
                         return (
                             <li key={elem.id}>
                                 <Link href={{

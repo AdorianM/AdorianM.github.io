@@ -1,5 +1,7 @@
 import rehypeHighlight from 'rehype-highlight';
 import remarkUnwrapImages from 'remark-unwrap-images';
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkExtractFrontmatter from 'remark-extract-frontmatter'
 
 const nextConfig = {
   webpack: (config, options) => {
@@ -11,7 +13,7 @@ const nextConfig = {
           loader: '@mdx-js/loader',
           options: {
             providerImportSource: '@mdx-js/react',
-            remarkPlugins: [remarkUnwrapImages],
+            remarkPlugins: [remarkUnwrapImages, remarkFrontmatter, remarkExtractFrontmatter],
             rehypePlugins: [rehypeHighlight],
           },
         },
