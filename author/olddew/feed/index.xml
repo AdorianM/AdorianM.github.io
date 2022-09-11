@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>OldDew &#8211; Casual Dew</title>
+	<atom:link href="https://www.olddew.me/author/olddew/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.olddew.me/</link>
+	<description>Just another WordPress site</description>
+	<lastBuildDate>Sun, 11 Sep 2022 15:46:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<item>
+		<title>Pretty theme</title>
+		<link>https://www.olddew.me/hello-world/</link>
+					<comments>https://www.olddew.me/hello-world/#comments</comments>
+		
+		<dc:creator><![CDATA[OldDew]]></dc:creator>
+		<pubDate>Sun, 11 Sep 2022 09:54:44 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.olddew.me/?p=1</guid>
+
+					<description><![CDATA[Thank you for creating this beautiful theme. This is an example of a page. Much page. Buzz Buzz Buzz Buzzing is fun. It was fun to buzz on Yahoo! Messenger.]]></description>
+										<content:encoded><![CDATA[
+<h2>Thank you for creating this beautiful theme.</h2>
+
+
+
+<p class="has-medium-font-size">This is an example of a page. Much page.</p>
+
+
+
+<div class="wp-container-8 wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-container-7 wp-block-columns are-vertically-aligned-top">
+<div class="wp-container-6 wp-block-column is-vertically-aligned-top" style="flex-basis:100%">
+<div class="wp-container-5 wp-block-columns">
+<div class="wp-container-4 wp-block-column">
+<div class="wp-container-3 wp-block-columns">
+<div class="wp-container-1 wp-block-column is-vertically-aligned-top" style="flex-basis:23%"><div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img src="https://www.olddew.me/wp-content/uploads/2022/09/Beesica-1.png" alt="" class="wp-image-8" width="284" height="273"/><figcaption>Beesica</figcaption></figure></div></div>
+
+
+
+<div class="wp-container-2 wp-block-column is-vertically-aligned-top" style="flex-basis:30%">
+<h2>Buzz Buzz Buzz</h2>
+
+
+
+<p>Buzzing is fun. It was fun to buzz on Yahoo! Messenger.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.olddew.me/hello-world/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
