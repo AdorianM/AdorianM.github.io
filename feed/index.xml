@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Casual Dew</title>
-	<atom:link href="https://www.olddew.me/feed/" rel="self" type="application/rss+xml" />
-	<link>https://www.olddew.me/</link>
+	<atom:link href="https://olddew.me/feed/" rel="self" type="application/rss+xml" />
+	<link>https://olddew.me/</link>
 	<description>Just another WordPress site</description>
-	<lastBuildDate>Sun, 11 Sep 2022 15:46:15 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 12 Sep 2022 19:06:36 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,15 +21,17 @@
 	<generator>https://wordpress.org/?v=6.0.2</generator>
 	<item>
 		<title>Pretty theme</title>
-		<link>https://www.olddew.me/hello-world/</link>
-					<comments>https://www.olddew.me/hello-world/#comments</comments>
+		<link>https://olddew.me/hello-world/</link>
+					<comments>https://olddew.me/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[OldDew]]></dc:creator>
 		<pubDate>Sun, 11 Sep 2022 09:54:44 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://www.olddew.me/?p=1</guid>
+		<guid isPermaLink="false">https://olddew.me/?p=1</guid>
 
-					<description><![CDATA[Thank you for creating this beautiful theme. This is an example of a page. Much page. Buzz Buzz Buzz Buzzing is fun. It was fun to buzz on Yahoo! Messenger.]]></description>
+					<description><![CDATA[<p>Thank you for creating this beautiful theme. This is an example of a page. Much page. Buzz Buzz Buzz Buzzing is fun!</p>
+<p>The post <a rel="nofollow" href="https://olddew.me/hello-world/">Pretty theme</a> appeared first on <a rel="nofollow" href="https://olddew.me/">Casual Dew</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <h2>Thank you for creating this beautiful theme.</h2>
 
@@ -46,7 +48,7 @@
 <div class="wp-container-4 wp-block-column">
 <div class="wp-container-3 wp-block-columns">
 <div class="wp-container-1 wp-block-column is-vertically-aligned-top" style="flex-basis:23%"><div class="wp-block-image">
-<figure class="alignleft size-full is-resized"><img src="https://www.olddew.me/wp-content/uploads/2022/09/Beesica-1.png" alt="" class="wp-image-8" width="284" height="273"/><figcaption>Beesica</figcaption></figure></div></div>
+<figure class="alignleft size-full"><img width="750" height="724" src="https://olddew.me/wp-content/uploads/2022/09/Beesica.png" alt="" class="wp-image-7" srcset="https://olddew.me/wp-content/uploads/2022/09/Beesica.png 750w, https://olddew.me/wp-content/uploads/2022/09/Beesica-300x290.png 300w" sizes="(max-width: 750px) 100vw, 750px" /><figcaption>Beesica</figcaption></figure></div></div>
 
 
 
@@ -55,7 +57,7 @@
 
 
 
-<p>Buzzing is fun. It was fun to buzz on Yahoo! Messenger.</p>
+<p>Buzzing is fun!</p>
 </div>
 </div>
 </div>
@@ -63,9 +65,10 @@
 </div>
 </div>
 </div></div>
+<p>The post <a rel="nofollow" href="https://olddew.me/hello-world/">Pretty theme</a> appeared first on <a rel="nofollow" href="https://olddew.me/">Casual Dew</a>.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://www.olddew.me/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>https://olddew.me/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
